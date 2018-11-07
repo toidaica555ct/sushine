@@ -10,6 +10,6 @@ class LoaiController extends Controller
     public function index()
     {
             $ds_loai = Loai::all();
-            return view('loai.index')->with('danhsachloai', $ds_loai);        
+            return view('loai.danhsachloai')->with('danhsachloai', $ds_loai);        
     }
 }

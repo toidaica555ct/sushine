@@ -17,4 +17,5 @@ Route::get('/', function () {
 Route::get('/danhsachloai','LoaiController@index');
 
 Route::get('/danhsachchude','ChuDeController@danhsachchude')->name('danhsachchude.index');
+Route::get('/danhsachsanpham','SanPhamController@sanpham_all');
 
