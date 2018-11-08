@@ -1,4 +1,4 @@
-@extends('layouts') 
+@extends('backend.layouts.index') 
 @section('content')
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->

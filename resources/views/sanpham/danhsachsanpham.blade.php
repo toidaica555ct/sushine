@@ -1,4 +1,8 @@
-@extends('layouts') 
+@extends('backend.layouts.index') 
+@section('title')
+Danh sách sản phẩm
+@endsection
+
 @section('content')
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -20,7 +24,7 @@
             <div class="col-xs-12">
                 <div class="box">
                     <div class="box-header">
-                        <h3 class="box-title">Data Table With Full Features</h3>
+                        <h3 class="box-title">Danh sách sản phẩm</h3>
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body">
@@ -45,7 +49,7 @@
                                 <tr>
                                     <td>{{$all->sp_ma}}</td>
                                     <td>{{$all->sp_ten}}</td>
-                                    <td>{{$all->l_sp_ma}}</td>
+                                    <td>{{$all->loaiSp->l_ten}}</td>
                                     <td>{{$all->sp_giaGoc}}</td>
                                     <td>{{$all->sp_giaBan}}</td>
                                     <td>{{$all->sp_hinh}}</td>

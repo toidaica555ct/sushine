@@ -14,8 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/danhsachloai','LoaiController@index');
+Route::get('/danhsachloai','LoaiController@index')->name('loai.index');
 
-Route::get('/danhsachchude','ChuDeController@danhsachchude')->name('danhsachchude.index');
-Route::get('/danhsachsanpham','SanPhamController@sanpham_all');
+Route::get('/danhsachchude','ChuDeController@danhsachchude')->name('chude.index');
+Route::get('/danhsachsanpham','SanPhamController@sanpham_all')->name('sanpham.index');
 

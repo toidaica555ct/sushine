@@ -1,4 +1,4 @@
-@extends('layouts') 
+@extends('backend.layouts.index') 
 @section('content')
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -39,7 +39,7 @@
                                 <tr>
                                     <td>{{$chude->cd_ma}}</td>
                                     <td>{{$chude->cd_ten}}</td>
-                                    <td>{{$chude->cd_taoMoi->format('d-m-Y')}}</td>
+                                    <td>{{\Carbon\Carbon::parse($chude->cd_taoMoi)->toDateString()}}</td>
                                     <td>{{$chude->cd_capNhat}}</td>
                                     <td>{{$chude->cd_trangthai}}</td>
                                 </tr>
