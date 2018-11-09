@@ -36,7 +36,7 @@ Danh sách sản phẩm
                                     <th>Mã loại</th>
                                     <th>Giá gốc</th>
                                     <th>Giá bán</th>
-                                    <th>Hình</th>
+                                    <th style="text-align: center">Hình</th>
                                     <th>Thông tin</th>
                                     <th>Đánh giá</th>
                                     <th>Ngày tạo mới</th>
@@ -52,7 +52,7 @@ Danh sách sản phẩm
                                     <td>{{$all->loaiSp->l_ten}}</td>
                                     <td>{{$all->sp_giaGoc}}</td>
                                     <td>{{$all->sp_giaBan}}</td>
-                                    <td>{{$all->sp_hinh}}</td>
+                                    <td style="text-align: center"><img src="{{asset('resources/storage/' .$all->sp_hinh) }}" style="width: 30%;"/></td>
                                     <td>{{$all->sp_thongTin}}</td>
                                     <td>{{$all->sp_danhGia}}</td>
                                     <td>{{\Carbon\Carbon::parse($all->sp_taoMoi)->toDateString()}}</td>
